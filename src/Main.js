@@ -1,6 +1,7 @@
 /**
  * http://usejsdoc.org/
- * [Ajitabh]: A sample commit to GIT repository
+ * Author: Ajitabh Sharma
+ * Purpose: Serve as initialization point for micro services used to manage bank app
  */
 
 // Required libraries
