@@ -1,5 +1,6 @@
 /**
  * http://usejsdoc.org/
+ * [Ajitabh]: A sample commit to GIT repository
  */
 
 // Required libraries
