@@ -92,7 +92,7 @@ function getNewCustomerID(){//Utility function
 	let newCustomerID;
 	
 	//Fire query
-	db.query(sqlQuery, function (error, results, fields) {
+	/*db.query(sqlQuery, function (error, results, fields) {
 	    if (error){
 	    	return null;
 	    }else{
@@ -114,7 +114,7 @@ function getNewCustomerID(){//Utility function
 	    	}
 	    	//return newCustomerID;
 	    }
-	});
+	});*/
 	
 	return newCustomerID;
 }
