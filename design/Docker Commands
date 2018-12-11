@@ -1,0 +1,37 @@
+/* Common docker commands *
+
+// List all images
+docker images
+
+// List all containers running or stopped
+docker container ls -a
+
+// List running containers
+docker ps
+
+// Remove stopped container
+docker rm <container ID>
+
+// Inspect a running image
+docker inspect <image name>
+
+/* For MySQL */
+// Pull latest IMAGE
+docker pull mysql/mysql-server
+
+// Run it in background. Container ID is generated automatically
+docker run --name=mysql1 -d <imageID>
+docker run --name=mysql1 \
+--mount type=bind,src=/Users/ajitabh/eclipse-workspace/PROJ-004/mysql/data/my.cnf,dst=/etc/my.cnf \
+--mount type=bind,src=/Users/ajitabh/eclipse-workspace/PROJ-004/mysql/data,dst=/var/lib/mysql \
+-d mysql/mysql-server
+
+// Get auto generated root Password
+docker logs <containerID> 2>&1 | grep GENERATED
+
+// Connect with mySQL from within container. Provide above auto generated password
+docker exec -it <containerID> mysql -uroot -p
+
+// Change default password of root.
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'newPassword';
+

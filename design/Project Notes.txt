@@ -1,0 +1,77 @@
+Exercise
+
+Build a group of micro services simulating account operation of a customer. The service must provide following services:
+1.) A customer can query about his demographic info
+2.) A customer must be able to updated his demographic info
+3.) A customer must be able to open a saving account
+4.) A customer must be able to query his account balance
+5.) A customer must be able to transfer money from his account to another customer account in the same bank providing account number
+
+Property
+1.) User RDBMS
+2.) No need HTML formatting, use only JSON objects
+3.) Basic authentication with every request
+4.) Services running on HTTPS
+5.) No encryption of messages
+6.) Deploy, scale, and monitor
+7.) Graceful shutdown of individual containers
+8.) Transactional consistency
+9.) git Integration
+
+Testing
+1.) Test using POSTMAN.
+
+--------------------------------------------------------------------------
+Design
+
+1. Customer demographic services
+
+GET https://localhost/demographic?customerID=C0001
+
+Output:
+{
+  //Demographic Details of customer
+}
+
+POST https://localhost/demographic
+Body
+{
+ // Demographic Data with customer ID as identifier
+}
+
+2. Customer Account service
+
+GET https://localhost/account?accountID=SB000123
+
+Output:
+{
+  //Account Details of customer
+}
+
+PUT https://localhost/account
+{
+ //Account details for opening savings accounts
+}
+
+3. Money transfer service
+
+POST https://localhost/transfer
+{
+ "fromAccount" : <Account Number>,
+ "toAccount"   : <Account Number>
+ "Amount"      : <Amount>
+}
+
+Response
+{
+  //Response depicting failure or success of transfer operation
+}
+
+Security
+1. Customer will get authenticated once using his userID/pwd
+2. In next iteration make the service token based and protected by gateway.
+
+--------------------------------------------------------
+DB Design
+See the excel in project folder
+

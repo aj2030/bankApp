@@ -1,0 +1,10 @@
+{
+   "db": "mysql://msapp01:msapp01@localhost:3306/accountsdb",
+   "db2": {
+	   "host"     : "localhost",
+	   "database" : "accountsdb",
+	   "user"     : "msapp01",
+	   "password" : "msapp01",
+	   "insecureAuth" : true
+   }
+}
