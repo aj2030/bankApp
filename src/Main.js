@@ -15,7 +15,6 @@ const db 			= require('./lib/DBConnectionMgmt.js');
 
 const app = express();
 
-/* Initializing the server to listen on port 8080 */
 const server = app.listen('8080', () => { //Initialize DB connection, test it and wait for connection
 	db.connect((err) => {
 		if(err){
