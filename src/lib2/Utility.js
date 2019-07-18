@@ -2,9 +2,9 @@
  * http://usejsdoc.org/
  */
 
-var a = ["Ajitabh", "Kumar", "Sharma", "Hello", "World"]
+var a = ["Manjit", "Sharma", "Hello", "World"]
 
 //Looping
-for(var i=0; i < a.length; i++){
-	console.log("Text present in array is: "+ a[i]);
+for(var j=0; j < a.length; j++){
+	console.log("Text present in array is: "+ a[j]);
 }
