@@ -2,7 +2,7 @@
  * http://usejsdoc.org/
  */
 
-var a = ["Ajitabh", "Kumar", "Sharma", "Hello", "World"]
+var a = ["Sharma", "Hello", "World"]
 
 //Looping
 for(var i=0; i < a.length; i++){
