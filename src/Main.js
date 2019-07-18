@@ -4,6 +4,7 @@
  * Purpose: Serve as initialization point for micro services used to manage bank app
  * Comment #1
  * Comment #2
+ * Comment #3
  */
 
 // Required libraries
