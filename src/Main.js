@@ -2,6 +2,8 @@
  * http://usejsdoc.org/
  * Author: Ajitabh Sharma
  * Purpose: Serve as initialization point for micro services used to manage bank app
+ * Comment #1
+ * Comment #2
  */
 
 // Required libraries
