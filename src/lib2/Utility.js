@@ -5,6 +5,6 @@
 var a = ["Sharma", "Hello", "World"]
 
 //Looping
-for(var i=0; i < a.length; i++){
-	console.log("Text present in array is: "+ a[i]);
+for(var j=0; j < a.length; j++){
+	console.log("Text present in array is: "+ a[j]);
 }
