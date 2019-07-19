@@ -4,7 +4,8 @@
 
 var array_01 = ["Kumar", "Hello", "World"]
 
-// Iterating over array
-for(var j=0; j < array_01.lenght; j++){
-	console.log("Printing array element: " + array_01[j]);
+
+for(var i=0; i < array_01.lenght; i++){
+	console.log("Printing elements of arry in sequentional manner: " + array_01[i]);
+
 }
