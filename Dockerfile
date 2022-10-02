@@ -1,8 +1,9 @@
 FROM node
-WORKDIR /app
-COPY package.json /app
+USER node
+WORKDIR /home/node/app
+COPY package.json /home/node/app
 RUN npm install
-COPY . /app
-CMD CD /app
+COPY . /home/node/app
+CMD CD /home/node/app
 CMD node Main.js
 EXPOSE 8080
