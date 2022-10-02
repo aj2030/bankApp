@@ -1,7 +1,7 @@
 FROM node
 
-# RUN chgrp -R 0 /app && chmod -R g+rwX /app
 CMD mkdir /app
+RUN chgrp -R 0 /app && chmod -R g+rwX /app
 
 WORKDIR /app
 COPY package.json /app
