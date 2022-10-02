@@ -1,6 +1,6 @@
 FROM node
 
-CMD mkdir /app
+RUN mkdir /app
 RUN chgrp -R 0 /app && chmod -R g+rwX /app
 
 WORKDIR /app
